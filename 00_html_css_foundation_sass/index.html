@@ -1,0 +1,91 @@
+<!-- SOURCE - https://www.youtube.com/watch?v=gXLjWRteuWI  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg class="close" fill="#000000" height="400px" width="400px" version="1.1" viewBox="0 0 512 512" stroke="#000000">
+                    <g>
+                        <g>
+                            <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M327.115,365.904
+                            L256,294.789l-71.115,71.115l-38.789-38.789L217.211,256l-71.115-71.115l38.789-38.789L256,217.211l71.115-71.115l38.789,38.789
+                            L294.789,256l71.115,71.115L327.115,365.904z"/>
+                        </g>
+                    </g>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+            </nav>
+            
+            <svg class="burgermenu" width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 17H8M12 17H20M4 12H20M4 7H12M16 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </header>
+        
+        <section class="hero">
+            <h1>Regain your confidence on the court</h1>
+            <p class="subhead">A shoe that is built with purpose and to take your game..orem ipsum, dolor sit amet consectetur adipisicing elit. Rem aliquam consectetur dolore nemo iste sint</p>
+
+            <svg class="down-arrow" fill="#000000" height="200px" width="300px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 476.213 476.213" xml:space="preserve">
+                <polygon points="287.5,384.394 253.107,418.787 253.107,0 223.107,0 223.107,418.787 188.713,384.394 167.5,405.606 
+                238.107,476.213 308.713,405.606 "/>
+            </svg>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aliquam consectetur dolore nemo iste sint.</p>
+                </div>
+                <img src="images/mizuno.jpg" alt="">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aliquam consectetur dolore nemo iste sint.</p>
+                </div>
+                <img src="images/newbalance.jpg" alt="">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aliquam consectetur dolore nemo iste sint.</p>
+                </div>
+                <img src="images/adidas.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const burgermenu = document.querySelector('.burgermenu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        burgermenu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
