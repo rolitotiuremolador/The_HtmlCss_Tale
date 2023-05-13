@@ -1,0 +1,43 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loadertext {
+    position: relative;
+    color: #333;
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    border-bottom: 1.5em solid #333;
+    line-height: 1.5;
+    font-family: consolas;
+    transform: uppercase;
+}
+
+.loadertext::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    color: dodgerblue;
+    border-bottom: 1.3em solid dodgerblue;
+    animation: lodtxt 10s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes lodtxt {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
