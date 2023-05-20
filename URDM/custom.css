@@ -1,0 +1,23 @@
+.b-green {
+    border: 1px solid green;
+    padding: 1em;
+    margin: .25em;
+}
+
+.b-red {
+    border:1px solid red;
+}
+
+.b-blue {
+    border: 1px solid blue;
+
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+.vertical-box {
+    min-height: 60vh;
+    background-color: #e1e1e1;
+}
